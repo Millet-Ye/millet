@@ -20,4 +20,4 @@ git add -A
 git commit -m 'deploy'
 
 # 提交到 你的项目的 gh-pages 分支
-git push -f git@https://github.com/Millet-Ye/millet-knowledge-master.github.io.git master:gh-pages
+git push -f git@ghttps://github.com/Millet-Ye/millet-knowledge-master.github.io.git master:gh-pages
