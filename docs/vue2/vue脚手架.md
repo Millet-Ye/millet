@@ -1,14 +1,14 @@
 ---
-title: vue脚手架
-date: 2023-04-03 14:16:27
+title: vue2
+date: 2023-04-04 13:00
 permalink: /pages/66e25e/
 categories:
   - vue2
 tags:
     -
 ---
+# vue2
 ## vue脚手架和组件
-
 #### 安装和配置nodejs(因为cli项目命令基于nodejs的)
   1. **安装 Node.js**(推荐一个网站：http://nodejs.cn/)    
     1.1 打开cmd 检查是否成功安装 nodejs

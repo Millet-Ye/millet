@@ -14,7 +14,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # 提交到本地仓库
-
+# https://github.com/Millet-Ye/millet-knowledge-master.github.io.git
 git init
 git add -A
 git commit -m 'deploy'
