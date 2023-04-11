@@ -24,7 +24,7 @@ module.exports = {
         }]
     ],
     title: 'Millte的知识积累',
-    base: '/Millet-knowledge/',
+    base: '/millet/',
     description: '立志不再懒懒散散的小前端的知识库',
     markdown: {
         lineNumbers: true,
