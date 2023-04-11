@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VM的安装和虚拟机的创建 | Millte的知识积累</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <script>var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6371333d39195dbe958ef14c0a722ac4";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();</script>
+    <link rel="icon" href="img/newlogo.ico">
+    <meta name="description" content="立志不再懒懒散散的小前端的知识库">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="./assets/css/0.styles.f10ef9a4.css" as="style"><link rel="preload" href="./assets/js/app.319a193b.js" as="script"><link rel="preload" href="./assets/js/2.ea3187a1.js" as="script"><link rel="preload" href="./assets/js/10.81554e59.js" as="script"><link rel="prefetch" href="./assets/js/3.8b4f10c0.js"><link rel="prefetch" href="./assets/js/4.80204203.js"><link rel="prefetch" href="./assets/js/5.7da0438d.js"><link rel="prefetch" href="./assets/js/6.ae8766f7.js"><link rel="prefetch" href="./assets/js/7.4217e9e9.js"><link rel="prefetch" href="./assets/js/8.ed819814.js"><link rel="prefetch" href="./assets/js/9.3ab8143e.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.f10ef9a4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/./" class="home-link router-link-active"><img src="./img/home.jpg" alt="Millte的知识积累" class="logo"> <span class="site-name can-hide">Millte的知识积累</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/./" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  算法&amp;常用方法
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  现代JavaScript库开发
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  vuePress
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  qiankun微前端
+</a></li><li class="dropdown-subitem"><a href="/./pages/66e25e/" class="nav-link">
+  vue2
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  vue3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          webgl学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  threejs
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="白帽子" class="dropdown-title"><span class="title">白帽子</span> <span class="arrow down"></span></button> <button type="button" aria-label="白帽子" class="mobile-dropdown-title"><span class="title">白帽子</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VM基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./pages/1c4297/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  VM的下载和安装
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于我" class="dropdown-title"><span class="title">关于我</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于我" class="mobile-dropdown-title"><span class="title">关于我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./" class="nav-link">
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="/./" class="nav-link">
+  零零碎碎
+</a></li><li class="dropdown-item"><!----> <a href="/./" class="nav-link">
+  随记
+</a></li><li class="dropdown-item"><h4>
+          索引
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  归档
+</a></li></ul></li></ul></div></div> <a href="https://github.com/Millet-Ye/millteknowledge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/./" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  算法&amp;常用方法
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  现代JavaScript库开发
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  vuePress
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  qiankun微前端
+</a></li><li class="dropdown-subitem"><a href="/./pages/66e25e/" class="nav-link">
+  vue2
+</a></li><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  vue3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          webgl学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  threejs
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="白帽子" class="dropdown-title"><span class="title">白帽子</span> <span class="arrow down"></span></button> <button type="button" aria-label="白帽子" class="mobile-dropdown-title"><span class="title">白帽子</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          VM基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./pages/1c4297/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  VM的下载和安装
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于我" class="dropdown-title"><span class="title">关于我</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于我" class="mobile-dropdown-title"><span class="title">关于我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/./" class="nav-link">
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="/./" class="nav-link">
+  零零碎碎
+</a></li><li class="dropdown-item"><!----> <a href="/./" class="nav-link">
+  随记
+</a></li><li class="dropdown-item"><h4>
+          索引
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/./" class="nav-link">
+  归档
+</a></li></ul></li></ul></div></div> <a href="https://github.com/Millet-Ye/millteknowledge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/./pages/1c4297/" aria-current="page" class="active sidebar-link">VM的安装和虚拟机的创建</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="page-content hasRightNav"><div class="right-nav" data-v-58b0b819></div> <div class="article-title theme-default-content" data-v-fda27140><h1 data-v-fda27140><span class="circle" data-v-fda27140></span>VM的安装和虚拟机的创建</h1> <div class="lastUpdatedTime" data-v-fda27140><span class="text" data-v-fda27140>更新时间:</span> 2023-04-05 14:10:04</div></div> <div class="theme-default-content content__default"><h1 id="vm的下载和安装-windows10"><a href="#vm的下载和安装-windows10" class="header-anchor">#</a> VM的下载和安装 windows10</h1> <blockquote><p>吐槽一下，这个官网里面找下载链接是真的恶心！ 希望你再看到这个文档的时候，方法还能用！！！</p></blockquote> <ol><li>下载
+<ul><li><p>提供一个官网网址： <a href="%5B%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80%5D(https://www.vmware.com/)">vmware</a></p></li> <li><p>提供一个直接下载地址：<a href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html" target="_blank" rel="noopener noreferrer">2023-4-5-vmware17<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 建议直接进入这个网站下载
+<img src="/img/VM/VM%E4%BD%BF%E7%94%A8%E6%8F%90%E4%BE%9B%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80.png" alt="VM网页下载指定"></p></li> <li><p>单击进入官网或者百度搜索VMware然后找到官网
+<img src="/img/VM/VM%E5%AE%98%E7%BD%91%E6%8C%87%E5%BC%95-1.png" alt="VM网页下载指定"></p> <ul><li>找到搜索按钮 单击展示搜索框</li> <li>输入：<strong>Download VMware Workstation Pro</strong></li> <li>回车
+</li></ul></li> <li><p>进入版本选择界面 默认选择第一项 单击进入下载页面
+<img src="/img/VM/VM%E5%AE%98%E7%BD%91%E6%8C%87%E5%BC%95-2.png" alt="VM网页下载指定"></p></li> <li><p>下载完成
+<img src="/img/VM/VM%E4%B8%8B%E8%BD%BD%E5%AE%8C%E6%88%90%E5%90%8E%E7%9A%84%E6%96%87%E4%BB%B6.png" alt="VM网页下载指定"></p></li></ul></li></ol> <p>2.卸载（没安装过的请跳过）</p> <blockquote><p>首先 我卸载之前是没有创建过虚拟机的 只因为当时拿到的VM版本不兼容 所以就卸载了
+所以本方法 不一定能解决所有卸载问题！ 仅供参考</p></blockquote> <ul><li><ol><li>在控制面板内删除</li></ol> <ul><li>打开 控制面板&gt;程序&gt;程序和功能 找到VMware</li> <li>右击更改&gt;进入带VMware安装向导&gt;选择下一步</li> <li>进入更改、修修或者删除安装&gt;选择删除&gt;选择下一步</li> <li>进入保留VMware配置&gt;全不保留&gt;下一步&gt;删除</li></ul></li> <li><p>2.在注册表内删除</p> <ul><li>按下WIN+R 输入 <code>regedit</code> &gt; 进入注册表编辑器</li> <li>找到<code>HKEY_CURRENT_USER</code> &gt; <code>HKEY_CURRENT_USER\SOFTWARE</code> &gt; <code>HKEY_CURRENT_USER\SOFTWARE\VMware, Inc.</code></li> <li>然后右击删除<code>VMware, Inc.</code>文件</li> <li>删除完成</li></ul></li> <li><p>3.完成以上基本不会在安装时受到影响！</p></li></ul> <ol start="3"><li>安装
+<ul><li>单击下载的文件</li> <li>后面流程如图：没有图就是选择下一步
+<img src="/img/VM/%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B-1.png" alt="VM网页下载指定"> <img src="/img/VM/%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B-2.png" alt="VM网页下载指定"> <img src="/img/VM/%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B-3.png" alt="VM网页下载指定"> <img src="/img/VM/%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B-4.png" alt="VM网页下载指定"></li></ul></li></ol> <h1 id="解决打开虚拟机-电脑未虚拟化的问题"><a href="#解决打开虚拟机-电脑未虚拟化的问题" class="header-anchor">#</a> 解决打开虚拟机 电脑未虚拟化的问题</h1> <h3 id="华硕飞行堡垒开启虚拟化"><a href="#华硕飞行堡垒开启虚拟化" class="header-anchor">#</a> 华硕飞行堡垒开启虚拟化</h3> <blockquote><p>问题: 此主机支持AMD-V, 但AMD-V 处于禁用状态</p></blockquote> <ol><li>重启电脑时按F2进入BIOS</li> <li>按F7进入Advance Mode</li> <li>找到Advance下的SVM Mode，将Disabled改为Enabled</li> <li>按F10保存设置</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Millet-Ye/millteknowledge/edit/master/docs/白帽子/VM的安装和虚拟机的创建.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer></div> <!---->  <div class="footer">
+    MIT Licensed | Copyright © 2023-present Millet
+  </div></main></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.319a193b.js" defer></script><script src="./assets/js/2.ea3187a1.js" defer></script><script src="./assets/js/10.81554e59.js" defer></script>
+  </body>
+</html>

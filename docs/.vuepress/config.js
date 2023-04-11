@@ -24,7 +24,8 @@ module.exports = {
         }]
     ],
     title: 'Millte的知识积累',
-    base: '/millet/',
+    base: './',
+    dest: './dist',  // 设置输出目录
     description: '立志不再懒懒散散的小前端的知识库',
     markdown: {
         lineNumbers: true,
